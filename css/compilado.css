@@ -1,0 +1,374 @@
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+ 
+h2 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #5f5f5f;
+  text-align: center; }
+
+  
+  .nosotrosimg img{
+    height: 100px;
+  }
+  
+  .colores--negro {
+    color: white;
+  }
+  
+  .colores--blanco {
+    color: black;
+  }
+  
+  .bg-footer {
+    background: #222222;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .filter img {
+    filter: brightness(50%);
+}
+
+  .footer-link li {
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 38px;
+    font-size: 15px;
+    -webkit-transition: all 0.5s;
+    background-color: transparent;
+    transition: all 0.5s;
+  }
+
+
+
+  .justify {
+    text-align: justify;
+  }
+
+  .center {
+    text-align: center;
+    align-items: center;
+    
+  }
+
+  
+  .f-17 {
+    font-size: 17px;
+  }
+
+  .fw-normal {
+    font-weight: 500 !important;
+  }
+
+  .titulo {
+    background-color: #c8c8ff;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .titulo {
+    height: 130px;
+    width: 130px;
+  }
+
+
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 10px 0; }
+
+.mision {
+  grid-template-columns: 1fr;
+  width: 100%;
+  align-items: center;
+  align-content: center; }
+  .mision img {
+    justify-items: center;
+    justify-content: center; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.carousel {
+  margin-bottom: 4rem; }
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10; }
+
+.carousel-item {
+  height: 32rem; }
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem; }
+
+button {
+  align-items: center;
+  align-content: center; }
+
+img {
+  max-width: 100%;
+  align-items: center; }
+
+.carousel-indicators p {
+  color: #222222; }
+
+footer {
+  background: #222222;
+  color: #fff;
+  padding: 80px 0 0 0; }
+
+.subfooter {
+  background-color: #343a40;
+  color: #ffffff;
+  text-align: center; }
+
+.primera {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: px 0;
+  margin-top: 25px; }
+
+.primera img {
+  width: 100%;
+  height: 180px; }
+
+.empresas {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 5px;
+  margin: 35px 0; }
+
+.empresas img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 80px;
+  height: 70px;
+  text-align: center;
+  vertical-align: middle;
+  list-style: none;
+  float: left;
+  filter: grayscale(100%); }
+
+#home {
+  color: white;
+  font-size: 1.5em; }
+
+#subfooter p {
+  text-align: center; }
+
+#boton {
+  align-items: center; }
+
+.separador {
+  background-color: #222222;
+  color: white;
+  gap: 0px;
+  padding-top: 50px;
+  margin: 20px 0;
+  align-items: center; }
+
+.banner {
+  color: white;
+  padding-top: 20px;
+  background-color: #222222;
+  margin-bottom: 20px;}
+
+.banner .content {
+  width: 40%;
+  padding: 90px 0 0 30px;
+  color: #fff; }
+
+.banner img {
+  height: 350px;
+  padding: 30px;
+  color: #fff; }
+
+.nosotros {
+  background-color: #222222;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  margin: 0px 0;
+  padding: auto;
+  align-items: center; }
+
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 6));
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 6));
+    }
+  }
+  .slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+  }
+  .slider::before, .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 6);
+  }
+  .slider .slide {
+    height: 100px;
+    width: 225px;
+  }
+
+.mision {
+  color: #222222;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 0px;
+  margin: 0px 0;
+  align-items: center;
+  padding-top: 20px; }
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 5px; }
+
+.contenido {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 45px;
+  padding-top: 20px; }
+
+.mision img {
+  height: 50px;
+  align-content: center;
+  padding-left: 225px; }
+
+.mision li {
+  list-style: none;
+  padding-left: 100px; }
+
+@media (max-width: 700px) {
+  .primera {
+    grid-template-columns: 1fr; }
+  .separador {
+    justify-items: center;
+    grid-template-columns: 1fr;
+    align-content: center; }
+  .separador button {
+    align-content: center;
+    margin-left: 200px; }
+  .banner {
+    padding-top: 20px;
+    padding-top: px;
+    margin-top: 10px;
+    grid-template-columns: 1fr;
+    background-color: #222222;
+    margin-bottom: 0px; }
+  img {
+    height: 100%; }
+  .nosotros {
+    grid-template-columns: 1fr;
+    width: 100%;
+    align-items: center;
+    align-content: center; } }
+  
+  .bg-footer img {
+    height: 60px;
+  }
+
+  .container-fluid img{
+    height: 60px;
+  }
+
+
+@media (max-width: 500px) {
+  .primera {
+    grid-template-columns: 1fr; }
+  .separador {
+    grid-template-columns: 1fr; }
+  .separador button {
+    align-content: center;
+    margin-left: 200px; }
+  .banner {
+    padding-top: 20px;
+    padding-top: px;
+    margin-top: 10px;
+    grid-template-columns: 1fr;
+    background-color: #222222;
+    margin-bottom: 0px; }
+  .contenido {
+    padding-top: 20px;
+    padding-top: px;
+    margin-top: 10px;
+    grid-template-columns: 1fr;
+    margin-bottom: 250px;
+    padding-top: 20px; }
+  .contenedor {
+    grid-template-columns: 1fr;
+    margin-bottom: 0px; }
+  .banner h2 {
+    text-align: center; }
+  .empresas {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 50px 20px;
+    align-items: center;
+    align-content: center;
+    margin-left: 200px; }
+  img {
+    height: 100%; } }
+
+    .bg-footer img {
+      height: 60px;
+    }
+  
+    .container-fluid img{
+      height: 60px;
+    }
+  

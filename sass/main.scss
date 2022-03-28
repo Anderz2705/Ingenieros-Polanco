@@ -1,0 +1,333 @@
+h2 {
+	font-weight: 500;
+	font-size: 18px;
+    color: rgb(95, 95, 95);
+	text-align: center;
+}
+
+
+$colores:(
+    blanco: rgb(255, 255, 255),
+    negro: rgb(0, 0, 0)
+);
+
+@each $white, $color in $colores {
+    .colores--#{$white} {
+        background-color: $color;
+    }
+ }
+
+$colores:(
+    negro: rgb(255, 255, 255),
+    blanco: rgb(0, 0, 0)
+);
+
+@each $white, $color in $colores {
+    .colores--#{$white} {
+        color: $color;
+    }
+ } 
+ 
+ $titulo1:(
+    color:rgb(200, 200, 255),
+    centro: center,
+    fuente: 20px,
+);
+
+.titulo{
+  background-color: map-get($titulo1, color);
+  text-align: map-get($titulo1, centro);
+  font-size:map-get($titulo1, fuente);
+}
+
+.titulo{
+    background-color: map-get($titulo1, color);
+    text-align: map-get($titulo1, centro);
+    font-size:map-get($titulo1, fuente);
+  }
+
+
+@mixin sizes($width, $height) {
+   height: $height;
+   width: $width;
+}
+
+.titulo {
+   @include sizes(130px, 130px);
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+.mision {
+    grid-template-columns: 1fr;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    img {
+        justify-items: center;
+        justify-content: center;
+    }}
+
+    body {
+        font-family: 'Roboto', sans-serif;
+      }
+    
+    .primeraseccion{
+        display: flex;
+        background-color:#343a40; 
+    }
+    
+    .carousel {
+        margin-bottom: 4rem;
+      }
+      .carousel-caption {
+        bottom: 3rem;
+        z-index: 10;
+      }
+      
+      .carousel-item {
+        height: 32rem;
+      }
+      .carousel-item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 32rem;
+      }
+    .azul{
+        background-color: #4e6cc0;
+        text-align: center;
+        float: left;
+        width: 50%;
+        height: 350%;
+        padding: 6%;
+    }	
+    button {
+        align-items: center;
+        align-content: center;
+    }
+    
+    img {
+        max-width: 100%;
+        align-items: center;
+    }
+    
+    
+    
+    .carousel-indicators {
+        p {
+        color: #222222;
+    }}
+    
+    footer {
+        background: #222222;
+        color: #fff;
+        padding: 80px 0 0 0;
+        }
+    
+    .subfooter {
+        background-color: #343a40;
+        color: #ffffff;
+        text-align: center;
+        }
+    
+    .primera {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin: px 0;
+        margin-top: 25px;
+      }
+      
+    .primera img {
+        width: 100%;
+        height: 180px;
+      }
+    
+    
+    .empresas {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 5px;
+        margin: 35px 0;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            width: 80px;
+            height: 70px;
+            text-align: center;
+            vertical-align: middle;
+            list-style: none;
+            float: left;
+            filter: grayscale(100%);
+        }
+      }
+    
+    
+    #home {
+        color: white;
+        font-size: 1.5em;
+    }
+    #subfooter p {
+        text-align: center;
+    }
+    
+    #boton {
+        align-items: center;
+    }
+    
+    .separador {
+        background-color: #222222;
+        color: white;
+        gap: 0px;
+        padding-top: 50px;
+        margin: 20px 0;
+        align-items: center;
+    }
+    
+    .banner {
+        color: white;
+        padding-top: 20px;
+        background-color: #222222;
+        margin-bottom: 20px;
+        .content {
+            width: 40%;
+            padding: 90px 0 0 30px;
+            color: #fff;
+        }
+        img {
+            height: 350px;
+            padding: 30px;
+            color: #fff;
+      }}
+      
+
+    
+    .nosotros {
+        background-color: #222222;
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+        margin: 0px 0;
+        align-items: center;
+    }
+    
+    .mision {
+        color: #222222;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap: 0px;
+        margin: 0px 0;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+        align-items: center;
+        width: 100%;
+        height: 350px;
+        margin-bottom: 5px;
+      }
+    
+    .contenido {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+        align-items: center;
+        width: 100%;
+        height: 350px;
+        margin-bottom: 45px;
+        padding-top: 20px;}
+    
+    .mision img {
+        height: 50px;
+        align-content: center;
+        padding-left: 225px;
+    }
+    
+    .mision li {
+        list-style: none;
+        padding-left: 100px;
+    }
+    
+    @media (max-width: 700px) {
+        .primera {
+            grid-template-columns: 1fr;
+        }
+        .separador {
+            justify-items: center;
+            grid-template-columns: 1fr;
+            align-content: center;
+            }
+        .separador button {
+            align-content: center;
+            margin-left: 200px;
+        }
+        .banner {
+            padding-top: 20px;
+            padding-top: px;
+            margin-top: 10px;
+            grid-template-columns: 1fr;
+            background-color: #222222;
+            margin-bottom: 0px;}
+    
+        img {
+            height: 100%;
+        }
+    
+        .nosotros {
+                grid-template-columns: 1fr;
+                width: 100%;
+                align-items: center;
+                align-content: center;}}
+      @media (max-width: 500px) {
+        .primera {
+            grid-template-columns: 1fr;
+        }
+        .separador {
+            grid-template-columns: 1fr;}
+        .separador button {
+            align-content: center;
+            margin-left: 200px;
+        }
+        .banner {
+            padding-top: 20px;
+            padding-top: px;
+            margin-top: 10px;
+            grid-template-columns: 1fr;
+            background-color: #222222;
+            margin-bottom: 0px;}
+        .contenido {
+                padding-top: 20px;
+                padding-top: px;
+                margin-top: 10px;
+                grid-template-columns: 1fr;
+                margin-bottom: 250px;
+                padding-top: 20px;}
+        .contenedor {
+                    grid-template-columns: 1fr;
+                    margin-bottom: 0px;}
+        
+        .banner h2 {
+            text-align: center;
+        }
+        .empresas {
+            grid-template-columns: 1fr;
+            width: 100%;
+            padding: 50px 20px;
+            align-items: center;
+            align-content: center;
+            margin-left: 200px;}
+        img {
+            height: 100%;
+        }}
+    
